@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grandy Tangguh Heldiyan | Web Developer & UI/UX Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+      }
+      .section-padding {
+        padding: 5rem 0;
+      }
+      .project-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .text-maroon {
+        color: #800000;
+      }
+      .bg-maroon {
+        background-color: #800000;
+      }
+      .border-maroon {
+        border-color: #800000;
+      }
+      .hover-bg-maroon:hover {
+        background-color: #600000;
+      }
+      .hover-text-maroon:hover {
+        color: #600000;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-10 shadow-sm">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-maroon">EL Web Project</h1>
+        <nav aria-label="Navigasi utama" class="flex space-x-8">
+          <a href="#about" class="text-gray-600 hover:text-maroon font-medium transition-colors">Home</a>
+          <a href="#projects" class="text-gray-600 hover:text-maroon font-medium transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-600 hover:text-maroon font-medium transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="about" class="hero-gradient pt-24 section-padding">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+              <h2 class="text-4xl md:text-5xl font-bold mb-6">Halo, Saya <span class="text-maroon">Grandy Tangguh Heldiyan</span></h2>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Saya adalah Mahasiswa Sistem Informasi, semester 3 di Universitas Ahmad Dahlan. Ini saya buat di praktikum 5 mata kuliah Teknologi Web.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#contact" class="bg-maroon text-white px-6 py-3 rounded-lg font-medium hover-bg-maroon transition-colors">Hubungi Saya</a>
+                <a href="#projects" class="border border-maroon text-maroon px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">Lihat Proyek</a>
+              </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+              <div class="relative">
+                <!-- Foto profil diganti dengan profile EL.png -->
+                <div class="w-80 h-80 bg-gray-200 rounded-full overflow-hidden shadow-xl">
+                  <img src="profile EL.png" alt="Foto Profil Grandy Tangguh Heldiyan" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Project Saya</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Sebenarnya saya belum pernah membuat projek, tapi mungkin ini ada beberapa ide projek yang saya ingin buat.</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1: E-Healthycator -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-md project-card">
+              <div class="h-48 overflow-hidden">
+                <!-- Gambar project diganti dengan e-healthycator.jpeg -->
+                <img src="e-healthycator.jpeg" alt="E-Healthycator Project" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">E-Healthycator</h3>
+                <p class="text-gray-600 mb-4">Platform informasi tentang kesehatan tubuh dan bagaimana cara mencapai tubuh serta kesehatan yang ideal.</p>
+                <a href="#" class="inline-flex items-center text-maroon font-medium hover-text-maroon transition-colors">
+                  Lihat Detail
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2: FitFight Connect -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-md project-card">
+              <div class="h-48 overflow-hidden">
+                <!-- Gambar project diganti dengan fitfight.webp -->
+                <img src="fitfight.webp" alt="FitFight Connect Project" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">FitFight Connect</h3>
+                <p class="text-gray-600 mb-4">Aplikasi komunitas martial arts yang menghubungkan pelatih, atlet, dan fasilitas kesehatan dengan sistem manajemen data terpusat.</p>
+                <a href="#" class="inline-flex items-center text-maroon font-medium hover-text-maroon transition-colors">
+                  Lihat Detail
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3: FitGuard Sys -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-md project-card">
+              <div class="h-48 overflow-hidden">
+                <!-- Gambar project diganti dengan fitguard sys.webp -->
+                <img src="fitguard sys.webp" alt="FitGuard Sys Project" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">FitGuard Sys</h3>
+                <p class="text-gray-600 mb-4">Sistem informasi terintegrasi untuk keamanan berolahraga.</p>
+                <a href="#" class="inline-flex items-center text-maroon font-medium hover-text-maroon transition-colors">
+                  Lihat Detail
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-padding">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Hubungi Saya</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Tertarik untuk bekerja sama atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya melalui salah satu cara di bawah ini.</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+              <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-maroon">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Email</h3>
+              <p class="text-gray-600">
+                <a href="mailto:grandyheldiyan911@gmail.com" class="hover:text-maroon transition-colors">grandyheldiyan911@gmail.com</a>
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+              <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-maroon">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.517 4.55a1 1 0 01-.272 1.027l-2.012 2.012a11.042 11.042 0 005.516 5.516l2.012-2.012a1 1 0 011.027-.272l4.55 1.517a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">WhatsApp</h3>
+              <p class="text-gray-600">
+                <a href="https://wa.me/6281326809381" class="hover:text-maroon transition-colors">+62 813 2680 9381</a>
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+              <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-maroon">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22s8-7.582 8-12A8 8 0 104 10c0 4.418 8 12 8 12z" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Lokasi</h3>
+              <p class="text-gray-600">Universitas Ahmad Dahlan</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+              <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-maroon">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">GitHub</h3>
+              <p class="text-gray-600">
+                <a href="https://github.com/EL05EL" class="hover:text-maroon transition-colors">EL05EL</a>
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+              <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-maroon">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Instagram</h3>
+              <p class="text-gray-600">
+                <a href="https://www.instagram.com/_l.dyyy?igsh=MWUydHc5ejFxdXJjZQ==" class="hover:text-maroon transition-colors">_l.dyyy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Grandy Tangguh Heldiyan. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>
